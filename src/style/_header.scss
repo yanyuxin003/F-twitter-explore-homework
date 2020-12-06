@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $header-padding-y $header-padding-x;
+  border-bottom: $header-border-base;
+}
+
+nav {
+  @extend .menu;
+}
+
+.btn-login {
+  @include btn-variant($primary-color, transparent, $primary-color);
+}
+
+.btn-register {
+  @include btn-variant($white, $primary-color, transparent);
+}
