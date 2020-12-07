@@ -2,13 +2,22 @@ main {
   border: 1px solid #3d5466;
   width: 500px;
   display: flex;
+  height: 600px;
   flex-direction: column;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .forget-password-link {
   color: $primary-color;
   text-decoration: none;
+  margin-bottom: 30px;
+  margin-left: 10px;
 }
 
 .btn-login {
@@ -25,4 +34,18 @@ main {
 
 .or {
   text-align: center;
+}
+
+.input {
+  width: 100%;
+  background-color: $body-bg;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $border-color;
+  line-height: $line-height-base;
+}
+
+label {
+  margin: 10px 10px 10px 10px;
 }
